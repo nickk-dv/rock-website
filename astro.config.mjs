@@ -1,25 +1,25 @@
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
 
-// https://astro.build/config
 export default defineConfig({
+	output: 'static',
+	outDir: './dist',
 	integrations: [
 		starlight({
-			title: 'My Docs',
+			title: 'Rock',
 			social: {
-				github: 'https://github.com/withastro/starlight',
+				github: 'https://github.com/nickk-dv/rock',
 			},
 			sidebar: [
 				{
-					label: 'Guides',
+					label: 'Overview',
 					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
-				},
-				{
-					label: 'Reference',
-					autogenerate: { directory: 'reference' },
+						{ label: 'Introduction', link: 'overview/introduction' },
+						{ label: 'Lexical elements', link: 'overview/lexical_elements' },
+						{ label: 'Module system', link: 'overview/module_system' },
+						{ label: 'Commands', link: 'overview/commands' },
+						{ label: 'Manifest', link: 'overview/manifest' },
+					]
 				},
 			],
 		}),
