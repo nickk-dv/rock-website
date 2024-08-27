@@ -77,7 +77,7 @@ Short explanation of the package purpose.
 [build]
 bin_name = "new_name"
 nodefaultlib = false
-lib_paths = ["lib/windows", "lib/linux"]
+lib_paths = ["./lib/windows", "./lib/linux"]
 links = ["raylib.dll", "raylib.so"]
 ```
 
