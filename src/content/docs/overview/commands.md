@@ -17,7 +17,7 @@ Usage: `rock <command> [options]`.
 | h, help     | Print help information     |
 | v, version  | Print compiler version     |
 
-#### `new` command
+### New
 Creates a new package in the current directory.
 
 ```bash
@@ -32,14 +32,14 @@ rock new sandbox
 - `--bin` set package kind to `bin`.
 - `--no-git` don't create git repository.
 
-#### `check` command
+### Check
 Check the program, print errors and warnings.
 
 ```bash
 rock check
 ```
 
-#### `build` command
+### Build
 Build the program, save the output into `/build` directory.
 
 ```bash
@@ -51,7 +51,7 @@ rock build --release
 - `--release` build in release mode.
 - `--emit-llvm` save llvm module to a file.
 
-#### `run` command
+### Run
 Build and run the program, save the output into `/build` directory.
 
 ```bash
@@ -63,14 +63,14 @@ rock run --release -- arg1 arg2
 
 **Options:** same as build command.
 
-#### `help` command
+### Help
 Print help information about the usage.
 
 ```bash
 rock help
 ```
 
-#### `version` command
+### Version
 Print compiler's semantic version.
 
 ```bash

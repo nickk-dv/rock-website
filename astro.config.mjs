@@ -17,6 +17,7 @@ export default defineConfig({
 						{ label: 'Introduction', link: 'overview/introduction' },
 						{ label: 'Lexical elements', link: 'overview/lexical_elements' },
 						{ label: 'Module system', link: 'overview/module_system' },
+						{ label: 'Attributes', link: 'overview/attributes' },
 						{ label: 'Commands', link: 'overview/commands' },
 						{ label: 'Manifest', link: 'overview/manifest' },
 					]
