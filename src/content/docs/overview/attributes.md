@@ -142,8 +142,6 @@ proc greet() {
 True, when any of the parameters are true.
 
 ```rs
-import core:libc.{ printf }
-
 proc setup_arch() {
     #[cfg_any(build_kind = "debug", target_arch = "x86_64")]
     setup_arch_x86_64();

@@ -111,6 +111,8 @@ This key may be changed or removed.
 Specifies the packages that this package depends on.  
 Each dependency is uniquely named and has the required version.
 
+#### `[dependencies]` example
+
 ```toml
 [dependencies]
 some_lib = "0.4.3"

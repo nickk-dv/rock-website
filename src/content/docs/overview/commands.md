@@ -8,17 +8,17 @@ To use `rock` commands, make sure that install directory is in your `PATH`.
 
 Usage: `rock <command> [options]`.
 
-| Command     | Description                |
-|-------------|----------------------------|
-| n, new      | Create a new package       |
-| c, check    | Check the program          |
-| b, build    | Build the program          |
-| r, run      | Build and run the program  |
-| h, help     | Print help information     |
-| v, version  | Print compiler version     |
+| Command                 | Description                |
+|-------------------------|----------------------------|
+| [n, new](#new)          | Create a new package       |
+| [c, check](#check)      | Check the program          |
+| [b, build](#build)      | Build the program          |
+| [r, run](#run)          | Build and run the program  |
+| [h, help](#help)        | Print help information     |
+| [v, version](#version)  | Print compiler version     |
 
 ### New
-Creates a new package in the current directory.
+Create a new package in the current directory.
 
 ```bash
 rock new sandbox
@@ -58,10 +58,13 @@ Build and run the program, save the output into `/build` directory.
 rock run --release -- arg1 arg2
 ```
 
+**Options:**
+- `--debug` build in debug mode.
+- `--release` build in release mode.
+- `--emit-llvm` save llvm module to a file.
+
 **Positional Arguments:**
 - `-- [args]` pass arguments to the compiled program when it is run.
-
-**Options:** same as build command.
 
 ### Help
 Print help information about the usage.
